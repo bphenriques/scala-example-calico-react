@@ -1,0 +1,23 @@
+{
+  "user": {
+    "name": "Bruno",
+    "notes": "some-notes"
+  },
+  "nodes": [
+    {
+      "id": "1",
+      "childs": ["2", "3"],
+      "notes": "abc"
+    },
+    {
+      "id": "2",
+      "childs": [],
+      "notes": "def"
+    },
+    {
+      "id": "id-2",
+      "childs": [],
+      "country": "ghi"
+    }
+  ]
+}
