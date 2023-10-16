@@ -4,6 +4,7 @@ import scalajs.js
 
 object model {
 
+  // TODO: does not work if I use plain-scala TreeNode
   @js.native
   trait TreeNode extends js.Object {
     val name: String                 = js.native
