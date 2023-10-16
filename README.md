@@ -12,6 +12,10 @@ Following this:
 - On a new terminal: `sbt "~fastLinkJS"` to monitor file changes and build the `scalajs:main.js` file.
 - On the original terminal: `npm run dev` to serve linked webpage locally.
 
+Should look like this:
+<img width="500" alt="image" src="https://github.com/bphenriques/scala-example-calico-react/assets/4727729/3ddbe30a-5a9b-4c5b-9d88-c7bb6a0545c7">
+
+
 ## Issues
 
 - Several warnings related to multiple missing source files. They are likely related with [something I dont fully understand yet](https://github.com/scala-js/vite-plugin-scalajs/issues/13).
