@@ -1,10 +1,12 @@
 package example.components
 
-import example.facade.visx.*
-import example.facade.visx.Hierarchy.hierarchy
+import example.components.visxcomponent.*
+import example.model.TreeNode
 import slinky.core.{FunctionalComponent, KeyAddingStage}
 import slinky.core.facade.ReactElement
 import slinky.web.svg.*
+
+import example.facade.visx
 
 // Based on the example: https://airbnb.io/visx/trees
 object TreeView {
@@ -16,7 +18,7 @@ object TreeView {
   val component: FunctionalComponent[Props] = FunctionalComponent[Props] { props =>
     val targetWidth  = "500"
     val targetHeight = "500"
-    val data         = hierarchy(props.tree)
+    val data         = visx.hierarchy[TreeNode](props.tree)
 
     svg(width := targetWidth, height := targetHeight)(
       LinearGradient(LinearGradient.Props("lg", peach, pink)),
@@ -56,7 +58,7 @@ object TreeView {
 }
 
 object Node {
-  case class Props(node: HierarchyPointNode[TreeNode])
+  case class Props(node: visx.HierarchyPointNode[TreeNode])
 
   val component: FunctionalComponent[Props] = FunctionalComponent[Props] { props =>
     Group(Group.Props(top = props.node.x, left = props.node.y))(

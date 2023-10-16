@@ -6,7 +6,7 @@ import cats.effect.*
 import example.components.TreeView.treeView
 import example.components.slinkyreact.reactDiv
 import fs2.dom.*
-import example.facade.visx.TreeNode
+import example.model.TreeNode
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSImport
