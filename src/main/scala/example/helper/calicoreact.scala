@@ -1,16 +1,16 @@
-package example.components
+package example.helper
 
 import calico.*
 import calico.html.io.{*, given}
 import cats.effect.*
 import cats.syntax.all.*
+import example.facade.react.ReactDOMClient
 import fs2.dom.*
 import org.scalajs.dom
 import org.scalajs.dom.Element
 import slinky.core.facade.ReactElement
-import slinky.web.ReactDOMClient
 
-object slinkyreact {
+object calicoreact {
 
   def reactDiv(id: String, component: IO[ReactElement]): Resource[IO, HtmlElement[IO]] =
     div(idAttr := id).flatMap { container =>

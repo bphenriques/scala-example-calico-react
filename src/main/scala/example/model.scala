@@ -6,11 +6,12 @@ object model {
 
   @js.native
   trait TreeNode extends js.Object {
-    val name: String = js.native
+    val name: String                 = js.native
     val children: js.Array[TreeNode] = js.native
   }
 
   object TreeNode {
+
     def apply(name: String, children: Array[TreeNode]): TreeNode =
       js.Dynamic.literal(name = name, children = js.Array(children: _*)).asInstanceOf[TreeNode]
   }
@@ -23,4 +24,3 @@ object model {
     ),
   )
 }
-

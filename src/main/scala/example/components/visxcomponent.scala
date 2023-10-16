@@ -17,10 +17,10 @@ object visxcomponent {
   object Tree extends ExternalComponent {
 
     case class Props(
-                      root: visx.HierarchyPointNode[TreeNode],
-                      size: Array[Int],
-                      children: visx.HierarchyPointNode[TreeNode] => ReactElement,
-                    )
+      root: visx.HierarchyPointNode[TreeNode],
+      size: Array[Int],
+      children: visx.HierarchyPointNode[TreeNode] => ReactElement,
+    )
 
     override val component = visx.Tree
   }
@@ -46,5 +46,3 @@ object visxcomponent {
     override val component = visx.LinkHorizontalStep
   }
 }
-
-

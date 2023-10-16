@@ -4,7 +4,7 @@ import calico.*
 import calico.html.io.{*, given}
 import cats.effect.*
 import example.components.TreeView.treeView
-import example.components.slinkyreact.reactDiv
+import example.helper.calicoreact.reactDiv
 import fs2.dom.*
 import example.model.TreeNode
 
