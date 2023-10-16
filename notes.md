@@ -1,5 +1,10 @@
 Minor notes that serve as reference, may not do anything with it.
 
+###
+
+Scala3 does not work very well on my machine :( IntelliJ and Codium does not work well. Metals is the latest but does
+support 3.3.1)
+
 ### Calico
 from:
 ```scala
